@@ -2,7 +2,7 @@
 
 int main()
 {
-	CSingalObject::GetInstance()->SetName("zhouhengbo");
+	CSingalObject::GetInstance()->SetName("zhb");
 
 	cout<<CSingalObject::GetInstance()->GetName().c_str()<<endl;
 

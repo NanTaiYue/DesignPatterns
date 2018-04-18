@@ -8,16 +8,16 @@
 */
 int main()
 {
-	CAbstractCompany* pXiaomi = new CXiaoMiCompany();
+	IAbstractCompany* pXiaomi = new CXiaoMiCompany();
 	if (pXiaomi)
 	{
-		CAbstractProduct* pComputer = pXiaomi->MakeComputer();
+		IAbstractProduct* pComputer = pXiaomi->MakeComputer();
 		if (pComputer)
 			pComputer->printSelf();
-		CAbstractProduct* pTelPhone = pXiaomi->MakeTelphone();
+		IAbstractProduct* pTelPhone = pXiaomi->MakeTelphone();
 		if (pTelPhone)
 			pTelPhone->printSelf();
-		CAbstractProduct* pAIRobot = pXiaomi->MakeAIRobot();
+		IAbstractProduct* pAIRobot = pXiaomi->MakeAIRobot();
 		if (pAIRobot)
 			pAIRobot->printSelf();
 		delete pComputer;
@@ -25,16 +25,16 @@ int main()
 		delete pAIRobot;
 		delete pXiaomi;
 	}
-	CAbstractCompany* pHuawei = new CHuaWeiCompany();
+	IAbstractCompany* pHuawei = new CHuaWeiCompany();
 	if (pHuawei)
 	{
-		CAbstractProduct* pComputer = pHuawei->MakeComputer();
+		IAbstractProduct* pComputer = pHuawei->MakeComputer();
 		if (pComputer)
 			pComputer->printSelf();
-		CAbstractProduct* pTelPhone = pHuawei->MakeTelphone();
+		IAbstractProduct* pTelPhone = pHuawei->MakeTelphone();
 		if (pTelPhone)
 			pTelPhone->printSelf();
-		CAbstractProduct* pAIRobot = pHuawei->MakeAIRobot();
+		IAbstractProduct* pAIRobot = pHuawei->MakeAIRobot();
 		if (pAIRobot)
 			pAIRobot->printSelf();
 		delete pComputer;

@@ -1,7 +1,7 @@
 #pragma once
 #include "abstractproduct.h"
 class CAIRobotProduct :
-	public CAbstractProduct
+	public IAbstractProduct
 {
 public:
 	CAIRobotProduct(void);

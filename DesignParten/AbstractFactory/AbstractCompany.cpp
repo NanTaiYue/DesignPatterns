@@ -1,11 +1,11 @@
 #include "AbstractCompany.h"
 
 
-CAbstractCompany::CAbstractCompany(void)
+IAbstractCompany::IAbstractCompany(void)
 {
 }
 
 
-CAbstractCompany::~CAbstractCompany(void)
+IAbstractCompany::~IAbstractCompany(void)
 {
 }

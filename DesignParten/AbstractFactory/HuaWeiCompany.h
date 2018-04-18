@@ -5,13 +5,13 @@
 */
 
 class CHuaWeiCompany :
-	public CAbstractCompany
+	public IAbstractCompany
 {
 public:
 	CHuaWeiCompany(void);
 	virtual ~CHuaWeiCompany(void);
-	virtual CAbstractProduct* MakeComputer();
-	virtual CAbstractProduct* MakeTelphone();
-	virtual CAbstractProduct* MakeAIRobot();
+	virtual IAbstractProduct* MakeComputer();
+	virtual IAbstractProduct* MakeTelphone();
+	virtual IAbstractProduct* MakeAIRobot();
 };
 

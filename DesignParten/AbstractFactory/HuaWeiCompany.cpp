@@ -11,9 +11,9 @@ CHuaWeiCompany::CHuaWeiCompany(void)
 CHuaWeiCompany::~CHuaWeiCompany(void)
 {
 }
-CAbstractProduct* CHuaWeiCompany::MakeComputer()
+IAbstractProduct* CHuaWeiCompany::MakeComputer()
 {
-	CAbstractProduct* p = new CComputerProduct();
+	IAbstractProduct* p = new CComputerProduct();
 	if (p)
 	{
 		p->setMaker("华为公司");
@@ -21,9 +21,9 @@ CAbstractProduct* CHuaWeiCompany::MakeComputer()
 	}
 	return p;
 }
-CAbstractProduct* CHuaWeiCompany::MakeTelphone()
+IAbstractProduct* CHuaWeiCompany::MakeTelphone()
 {
-	CAbstractProduct* p = new CTelPhoneProduct();
+	IAbstractProduct* p = new CTelPhoneProduct();
 	if (p)
 	{
 		p->setMaker("华为公司");
@@ -31,9 +31,9 @@ CAbstractProduct* CHuaWeiCompany::MakeTelphone()
 	}
 	return p;
 }
-CAbstractProduct* CHuaWeiCompany::MakeAIRobot()
+IAbstractProduct* CHuaWeiCompany::MakeAIRobot()
 {
-	CAbstractProduct* p = new CAIRobotProduct();
+	IAbstractProduct* p = new CAIRobotProduct();
 	if (p)
 	{
 		p->setMaker("华为公司");

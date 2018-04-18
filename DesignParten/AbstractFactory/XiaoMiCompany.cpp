@@ -11,9 +11,9 @@ CXiaoMiCompany::CXiaoMiCompany(void)
 CXiaoMiCompany::~CXiaoMiCompany(void)
 {
 }
-CAbstractProduct* CXiaoMiCompany::MakeComputer()
+IAbstractProduct* CXiaoMiCompany::MakeComputer()
 {
-	CAbstractProduct* p = new CComputerProduct();
+	IAbstractProduct* p = new CComputerProduct();
 	if (p)
 	{
 		p->setMaker("小米公司");
@@ -21,9 +21,9 @@ CAbstractProduct* CXiaoMiCompany::MakeComputer()
 	}
 	return p;
 }
-CAbstractProduct* CXiaoMiCompany::MakeTelphone()
+IAbstractProduct* CXiaoMiCompany::MakeTelphone()
 {
-	CAbstractProduct* p = new CTelPhoneProduct();
+	IAbstractProduct* p = new CTelPhoneProduct();
 	if (p)
 	{
 		p->setMaker("小米公司");
@@ -31,9 +31,9 @@ CAbstractProduct* CXiaoMiCompany::MakeTelphone()
 	}
 	return p;
 }
-CAbstractProduct* CXiaoMiCompany::MakeAIRobot()
+IAbstractProduct* CXiaoMiCompany::MakeAIRobot()
 {
-	CAbstractProduct* p = new CAIRobotProduct();
+	IAbstractProduct* p = new CAIRobotProduct();
 	if (p)
 	{
 		p->setMaker("小米公司");

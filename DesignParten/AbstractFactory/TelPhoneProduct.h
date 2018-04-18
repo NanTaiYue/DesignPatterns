@@ -1,7 +1,7 @@
 #pragma once
 #include "abstractproduct.h"
 class CTelPhoneProduct :
-	public CAbstractProduct
+	public IAbstractProduct
 {
 public:
 	CTelPhoneProduct(void);
