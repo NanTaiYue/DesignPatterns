@@ -6,6 +6,11 @@
 *.lo
 *.o
 *.obj
+*.tlog
+*.ilk
+*.pdb
+*.sdf
+Debug/
 
 # Precompiled Headers
 *.gch
